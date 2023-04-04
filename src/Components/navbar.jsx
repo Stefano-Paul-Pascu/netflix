@@ -1,9 +1,12 @@
+import logo from '../assets/netflix_logo.png';
+import icon from '../assets/avatar.png'
+
 function Navbar(){
     return(
         <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="container-fluid px-5">
-            <a className="navbar-brand" href="./index.html">
-                <img src="./assets/netflix_logo.png" id="logo"/>
+            <a className="navbar-brand" href="#">
+                <img src={logo} id="logo" style={{height:'48px'}}/>
             </a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -14,7 +17,7 @@ function Navbar(){
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li className="nav-item">
-                        <a className="nav-link" href="./index.html">Home</a>
+                        <a className="nav-link" href="#">Home</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">Tv Shows</a>
@@ -57,13 +60,13 @@ function Navbar(){
                         <div className="btn-group">
                             <button type="button" className="btn dropdown-toggle text-secondary border-0"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./assets/avatar.png" id="avatar"/>
+                                <img src={icon} id="avatar" style={{height:'24px'}}/>
                             </button>
                             <ul className="dropdown-menu dropdown-menu-dark">
                                 <li><a className="dropdown-item" href="./profile.html">
                                         <div className="d-flex align-items-center">
-                                            <img src="./assets/avatar.png" id="avatar-small"/>
-                                            Epicoder #1
+                                            <img src={icon} id="avatar-small" style={{height:'24px'}}/>
+                                            Stefano
                                         </div>
                                     </a></li>
                                 <li><a className="dropdown-item" href="./profile.html">Manage Profiles</a></li>

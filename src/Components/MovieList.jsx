@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Poster from "./Poster";
 
-const BASE_URL = "http://www.omdbapi.com/?apikey=3adfbdee";
+const BASE_URL = "http://www.omdbapi.com/?apikey=3adfbdee&s=";
 class MovieList extends Component {
   state = {
     movies: [],
